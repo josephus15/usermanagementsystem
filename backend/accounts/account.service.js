@@ -279,7 +279,7 @@ async function sendVerificationEmail(account, origin) {
     }
 
     const backendUrl = process.env.NODE_ENV === 'production'
-        ? 'https://user-management-system-02.onrender.com' 
+        ? 'https://usermanagementsystem-cordova.onrender.com' 
         : 'http://localhost:4000';
     
     const verifyUrl = `${backendUrl}/accounts/verify-email?token=${account.verificationToken}&origin=${encodeURIComponent(origin)}`;
